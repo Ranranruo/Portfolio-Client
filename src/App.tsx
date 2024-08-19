@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./pages/Layout/Layout";
+import Layout from "./Layout/Layout";
 import { Provider } from "react-redux";
 import GlobalStyles from "./style/GlobalStyles";
 import store from "./store/store";
+import Text from "./components/ui/atoms/Text/Text";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <GlobalStyles/>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<h1>h</h1>} />
+            <Route path="/" element={<h1>a</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>
